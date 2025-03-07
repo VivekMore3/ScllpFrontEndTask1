@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Add User</h2>
+    <form (ngSubmit)="addUser()">
+        <input type="text" placeholder="First Name" [(ngModel)]="user.firstName" name="firstName" required />
+        <input type="text" placeholder="Last Name" [(ngModel)]="user.lastname" name="lastname" required />
+        <input type="email" placeholder="Email ID" [(ngModel)]="user.emailId" name="emailId" required />
+        <input type="text" placeholder="Phone Number" [(ngModel)]="user.phoneNumber" name="phoneNumber" required />
+        <input type="password" placeholder="Password" [(ngModel)]="user.password" name="password" required />
+        <button type="submit">Add User</button>
+    </form>
+</div>
